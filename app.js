@@ -15,9 +15,10 @@ const app = express();
 const port = process.env.PORT || 4100
 
 
-// public file to server
+// public file to server aA //
 app.use(express.static('public'))
-    // to recognize the incoming Request Object as strings or arrays
+
+// to recognize the incoming Request Object as strings or arrays
 app.use(express.urlencoded({ extended: true }));
 // what is express-ejs-layout //
 app.use(expressLayouts);
